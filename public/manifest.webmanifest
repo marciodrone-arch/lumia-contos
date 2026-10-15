@@ -1,0 +1,11 @@
+{
+  "name": "Lúmia Contos",
+  "short_name": "Lúmia",
+  "description": "Histórias pequenas para noites mais tranquilas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#17213f",
+  "theme_color": "#17213f",
+  "lang": "pt-BR",
+  "icons": [{"src":"/logo.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

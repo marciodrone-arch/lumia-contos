@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#17213f" />
+    <meta name="description" content="Lúmia Contos: pequenas histórias para noites mais tranquilas." />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <title>Lúmia Contos · histórias para sonhar</title>
+  </head>
+  <body>
+    <div class="app-shell" id="appShell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Lúmia Contos, voltar ao início">
+          <span class="brand-mark"><img src="/logo.svg" alt="" /></span>
+          <span><strong>Lúmia</strong><small>contos para sonhar</small></span>
+        </a>
+        <div class="top-actions">
+          <button class="icon-button" id="nightToggle" aria-label="Ativar modo noturno" title="Modo noturno"><span aria-hidden="true">☾</span></button>
+          <button class="avatar-button" id="parentButton" aria-label="Abrir espaço dos responsáveis">P</button>
+        </div>
+      </header>
+
+      <main id="inicio">
+        <section class="hero-section section-wrap" aria-labelledby="heroTitle">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> ritual de hoje</p>
+            <h1 id="heroTitle">Uma história pequena para um sonho <em>bem grande.</em></h1>
+            <p class="hero-lede">Cinco minutinhos de aconchego para respirar fundo, imaginar junto e deixar a noite chegar devagar.</p>
+            <div class="hero-meta"><span>☾ 5 min</span><span>♡ 0–4 anos</span><span>◌ leitura guiada</span></div>
+            <div class="hero-actions">
+              <button class="primary-button" id="startStory"><span>Começar história</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+              <button class="text-button" id="resumeStory">Retomar de onde parei <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div class="hero-illustration" aria-label="Ilustração de uma lua, nuvens e uma raposinha dormindo" role="img">
+            <div class="illustration-glow"></div>
+            <div class="star star-one">✦</div><div class="star star-two">·</div><div class="star star-three">✧</div>
+            <div class="moon-shape"><span></span></div>
+            <div class="cloud cloud-back"></div><div class="cloud cloud-front"></div>
+            <div class="fox-bed"><span class="fox-ear left"></span><span class="fox-ear right"></span><span class="fox-face"><i></i><i></i><b>⌣</b></span><span class="fox-tail"></span></div>
+            <div class="sleep-word">shhh...</div>
+          </div>
+        </section>
+
+        <section class="themes-section section-wrap" aria-labelledby="themesTitle">
+          <div class="section-heading">
+            <div><p class="eyebrow">para cada imaginação</p><h2 id="themesTitle">Escolha um céu</h2></div>
+            <p class="section-note">A mesma história, um mundo novo.</p>
+          </div>
+          <div class="theme-row" id="themeRow" role="list" aria-label="Temas visuais">
+            <button class="theme-pill active" data-theme="noite" role="listitem"><span class="theme-icon theme-night">☾</span><span>Céu de algodão</span></button>
+            <button class="theme-pill" data-theme="floresta" role="listitem"><span class="theme-icon theme-forest">⌁</span><span>Floresta mágica</span></button>
+            <button class="theme-pill" data-theme="oceano" role="listitem"><span class="theme-icon theme-ocean">≈</span><span>Oceano calmo</span></button>
+            <button class="theme-pill" data-theme="espaco" role="listitem"><span class="theme-icon theme-space">✦</span><span>Espaço sonolento</span></button>
+            <button class="theme-pill" data-theme="jardim" role="listitem"><span class="theme-icon theme-garden">✽</span><span>Jardim de luz</span></button>
+            <button class="theme-pill" data-theme="chuva" role="listitem"><span class="theme-icon theme-rain">⌇</span><span>Dia de chuva</span></button>
+          </div>
+        </section>
+
+        <section class="library-section section-wrap" aria-labelledby="libraryTitle">
+          <div class="section-heading library-heading">
+            <div><p class="eyebrow">biblioteca da família</p><h2 id="libraryTitle">Histórias para hoje</h2></div>
+            <button class="filter-button" id="filterButton">Todas <span aria-hidden="true">⌄</span></button>
+          </div>
+          <div class="story-grid">
+            <article class="story-card featured-card" data-story="lua">
+              <div class="card-art art-lua"><span class="card-moon">☾</span><span class="card-cloud c1"></span><span class="card-cloud c2"></span><span class="card-sprinkle">✦</span></div>
+              <div class="card-content"><div class="card-tags"><span class="tag free-tag">Grátis</span><span class="tag">5 min</span></div><h3>A Lua que Aprendeu a Sussurrar</h3><p>Uma lua curiosa descobre que os sonhos gostam de voz baixinha.</p><button class="card-link open-story" data-story="lua">Ler agora <span>→</span></button></div>
+            </article>
+            <article class="story-card" data-story="nuvem">
+              <div class="card-art art-nuvem"><span class="rainbow">⌒</span><span class="tiny-cloud"></span><span class="tiny-star">✦</span></div>
+              <div class="card-content"><div class="card-tags"><span class="tag free-tag">Grátis</span><span class="tag">3 min</span></div><h3>A Nuvem que Guardava Abraços</h3><p>Uma nuvenzinha encontra um jeito de cuidar de todos.</p><button class="card-link open-story" data-story="nuvem">Ler agora <span>→</span></button></div>
+            </article>
+            <article class="story-card premium-card" data-story="baleia">
+              <div class="card-art art-baleia"><span class="sea-moon">◒</span><span class="wave">≈</span><span class="bubble">○</span></div>
+              <div class="card-content"><div class="card-tags"><span class="tag premium-tag">Clube Lúmia</span><span class="tag">7 min</span></div><h3>A Baleia e o Mar de Estrelas</h3><p>Uma canção azul para navegar até o sono.</p><button class="card-link premium-link open-club" data-story="baleia">Conhecer história <span>↗</span></button></div>
+            </article>
+            <article class="story-card premium-card" data-story="raposa">
+              <div class="card-art art-raposa"><span class="pine p1"></span><span class="pine p2"></span><span class="mini-fox">⌣</span><span class="firefly">✦</span></div>
+              <div class="card-content"><div class="card-tags"><span class="tag premium-tag">Clube Lúmia</span><span class="tag">4 min</span></div><h3>A Raposa que Colecionava Luas</h3><p>Pequenas luas, grandes descobertas e um abraço no fim.</p><button class="card-link premium-link open-club" data-story="raposa">Conhecer história <span>↗</span></button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="club-banner section-wrap" aria-labelledby="clubTitle">
+          <div class="club-orbit orbit-one"></div><div class="club-orbit orbit-two"></div>
+          <div class="club-copy"><p class="eyebrow light-eyebrow">para continuar sonhando</p><h2 id="clubTitle">Conheça o <em>Clube Lúmia</em></h2><p>Uma nova história por semana, temas sazonais e um cantinho de calma para a família.</p><button class="light-button open-club">Ver como funciona <span>↗</span></button></div>
+          <div class="club-badge"><div class="badge-moon">☾</div><span>mais histórias<br />menos pressa</span></div>
+        </section>
+      </main>
+
+      <footer class="footer section-wrap"><span>feito para noites que cabem num abraço</span><span>© 2026 Lúmia Contos</span></footer>
+    </div>
+
+    <div class="reader-overlay" id="reader" aria-hidden="true">
+      <div class="reader-topbar"><button class="back-button" id="closeReader"><span aria-hidden="true">←</span><span>Biblioteca</span></button><div class="reader-brand"><img src="/logo.svg" alt="" /><span>Lúmia</span></div><button class="icon-button reader-night" id="readerNight" aria-label="Ativar modo noturno"><span>☾</span></button></div>
+      <div class="reader-progress"><div class="progress-label"><span id="sceneLabel">Cena 1 de 5</span><span id="progressPercent">20%</span></div><div class="progress-track"><span id="progressBar"></span></div></div>
+      <div class="reader-body">
+        <div class="reader-art" id="readerArt" role="img" aria-label="Ilustração da cena atual"><div class="reader-stars">✦　·　✧</div><div class="reader-moon"></div><div class="reader-cloud rc-one"></div><div class="reader-cloud rc-two"></div><div class="reader-character">⌣</div></div>
+        <div class="reader-copy"><p class="scene-kicker" id="sceneKicker">A Lua que Aprendeu a Sussurrar</p><h2 id="sceneTitle">Era uma vez, bem baixinho...</h2><p id="sceneText">A Lua morava no alto do céu e adorava ouvir o mundo dormir. Mas naquela noite, ela queria contar uma história.</p><div class="reader-tools"><button class="sound-button" id="speakScene"><span aria-hidden="true">◖</span><span id="speakLabel">Ouvir história</span></button><button class="hint-button" id="hintButton" aria-label="Dica para o adulto">i</button></div></div>
+      </div>
+      <div class="reader-bottom"><div class="scene-dots" id="sceneDots" aria-label="Cenas da história"></div><div class="reader-nav"><button class="secondary-button" id="prevScene" disabled><span>←</span> Voltar</button><button class="primary-button compact" id="nextScene">Próxima cena <span class="button-arrow">→</span></button></div></div>
+    </div>
+
+    <div class="dialog-backdrop" id="clubDialog" aria-hidden="true"><section class="club-dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><button class="dialog-close" data-close-dialog aria-label="Fechar">×</button><div class="dialog-spark">✦</div><p class="eyebrow">Clube Lúmia</p><h2 id="dialogTitle">Mais histórias para o ritual de vocês.</h2><p class="dialog-lede">O app já nasce com histórias gratuitas. O clube é o próximo passo para sustentar novas criações com calma e sem anúncios.</p><div class="plan-card"><div><span class="plan-name">Plano família</span><strong>R$ 14,90 <small>/ mês</small></strong></div><span class="plan-pill">em breve</span></div><ul class="benefit-list"><li><span>✓</span> biblioteca completa, sem anúncios</li><li><span>✓</span> uma história nova toda semana</li><li><span>✓</span> todos os temas e finais especiais</li></ul><button class="primary-button full-button" id="interestButton">Quero saber quando lançar <span class="button-arrow">→</span></button><p class="dialog-footnote">Sem cobrança agora. Esta vitrine está pronta para conectar um checkout seguro.</p></section></div>
+
+    <div class="dialog-backdrop" id="parentDialog" aria-hidden="true"><section class="parent-dialog" role="dialog" aria-modal="true" aria-labelledby="parentTitle"><button class="dialog-close" data-close-dialog aria-label="Fechar">×</button><div class="parent-icon">♡</div><p class="eyebrow">cantinho dos responsáveis</p><h2 id="parentTitle">A noite também é de vocês.</h2><p>As histórias são curtinhas, sem anúncios e com comandos grandes para ler junto. O modo noturno reduz o brilho e o botão de áudio usa a voz do dispositivo.</p><button class="secondary-button full-button" data-close-dialog>Voltar para a biblioteca <span>→</span></button></section></div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>

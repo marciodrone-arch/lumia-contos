@@ -1,0 +1,10 @@
+{
+  "name": "lumiacontos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Livro digital infantil interativo para a rotina noturna.",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css app.js package.json server.cjs dist/ && cp -r public/* dist/"
+  }
+}
